@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: © 2024 Romain Brault <mail@romainbrault.com>
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Instruct type checkers to look for inline type annotations in this package.
+# See PEP 561.

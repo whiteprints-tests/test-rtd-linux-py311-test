@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: © 2024 Romain Brault <mail@romainbrault.com>
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Ignore everything.
+**
+
+# Except the following.
+
+## Sources
+!src/
+!.git/
+!pyproject.toml
+!hatch.toml
+!hatch_build.py
+!LICENSES
+!README.md
+!uv.lock
+
+## Template
+!template
+!jinja_template
+!copier.yml

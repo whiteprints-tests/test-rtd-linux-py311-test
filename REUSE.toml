@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: © 2024 Romain Brault <mail@romainbrault.com>
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+version = 1
+SPDX-PackageName = "test_rtd_linux_py311_test"
+SPDX-PackageSupplier = "whiteprints-tests <mail@romainbrault.com>"
