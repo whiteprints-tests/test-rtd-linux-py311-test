@@ -56,6 +56,14 @@ dependencies = [
     "typing-extensions>=4.12.2; python_full_version<'3.12'",
 ]
 
+urls.changelog = "https://github.com/whiteprints-tests/test-rtd-linux-py311-test/releases"
+urls.discussions = "https://github.com/whiteprints-tests/test-rtd-linux-py311-test/discussions"
+urls.documentation = "https://github.com/whiteprints-tests/test-rtd-linux-py311-test"
+urls.download = "https://github.com/whiteprints-tests/test-rtd-linux-py311-test/releases"
+urls.homepage = "https://github.com/whiteprints-tests/test-rtd-linux-py311-test"
+urls.integration = "https://github.com/whiteprints-tests/test-rtd-linux-py311-test/actions"
+urls.issues = "https://github.com/whiteprints-tests/test-rtd-linux-py311-test/issues"
+urls.repository = "https://github.com/whiteprints-tests/test-rtd-linux-py311-test"
 scripts.test-rtd-linux-py311-test = "test_rtd_linux_py311_test.cli.entrypoint:test_rtd_linux_py311_test"
 
 [tool.pyproject-fmt]

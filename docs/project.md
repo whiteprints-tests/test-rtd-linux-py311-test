@@ -6,7 +6,9 @@ SPDX-License-Identifier: CC0-1.0
 
 # 🛠️ Codebase Overview
 
-The project is organised as follow.
+The project is hosted on [https://github.com/whiteprints-tests/test-rtd-linux-py311-test.git](https://github.com/whiteprints-tests/test-rtd-linux-py311-test.git).
+
+It is organised as follow.
 
 ## Files and directories
 

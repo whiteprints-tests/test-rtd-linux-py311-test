@@ -1,0 +1,118 @@
+# SPDX-FileCopyrightText: © 2024 Romain Brault <mail@romainbrault.com>
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+name: 🐛 Bug report
+description: Report a bug or unexpected behaviour
+title: "bug: :bug: "
+labels:
+  - ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Thanks for taking the time to fill out this bug report!
+
+        Before submitting an issue, please make sure the issue hasn't been already addressed by searching through the existing and past [issues](https://whiteprints-tests/test-rtd-linux-py311-test/issues).
+
+        By submitting a new issue, you agree with this project's [Code of Conduct](https://whiteprints-tests/test-rtd-linux-py311-test/blob/main/CODE_OF_CONDUCT.md).
+
+        We are also happy to accept contributions from our users by means of [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) 🚀. For more details see [here](https://whiteprints-tests/test-rtd-linux-py311-testt/blob/main/CONTRIBUTING.md).
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before submittig a new issue...
+      options:
+        - label: I have already searched for relevant issues.
+          required: true
+        - label: I agree to follow this project's Code of Conduct.
+          required: true
+  - type: textarea
+    attributes:
+      label: My current environment
+      description: |
+        Fill if you think it is necessary. It may help us to solve the issue more quickly!
+
+        Please run the following and paste the output below.
+
+        ```console
+        python -c "import rich; from test_rtd_linux_py311_test.debug_info import gather_debug_info; rich.print(gather_debug_info())"
+        ```
+
+        For security purposes, please feel free to check and edit the output of `gather_debug_info()`.
+      value: |
+        <details>
+        <summary>The output of `gather_debug_info()`</summary>
+
+        ```python
+        Your output of `gather_debug_info()` here
+        ```
+        </details>
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: |
+        Please provide a clear and concise description of what the bug is.
+      placeholder: |
+        A bug happened!
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: What is the code or steps to reproduce the behavior?
+      description: |
+        If relevant, add a minimal example so that we can reproduce the error by running the code. It is very important for the snippet to be as succinct (minimal) as possible, so please take time to trim down any irrelevant code to help us debug efficiently. We are going to copy-paste your code and we expect to get the same result as you did: avoid any external data, and include the relevant imports, etc.
+
+        You can place your example in triple quotes for better formatting.
+      placeholder: |
+        Place your minimal reproducing example in triple quotes.
+
+        Python:
+        ```python
+        ```
+
+        Shell:
+        ```sh
+        ```
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: |
+        Please copy and paste any relevant log output.
+      value: |
+        <details>
+        <summary>Log output</summary>
+
+        ```sh
+        Your log output
+        ```
+        </details>
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Potential fix
+      description: |
+        Tell us if you have an idea on what cause this bug or how to fix it.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing 🎉!

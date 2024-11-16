@@ -19,5 +19,6 @@ Guide <guide>
 Command Line <usage>
 Reference <autoapi/index>
 Licensing <licensing_index>
+Releases <https://github.com/whiteprints-tests/test-rtd-linux-py311-test/releases>
 Contributing <contributing_index>
 ```
