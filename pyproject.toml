@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2024 Romain Brault <mail@romainbrault.com>
+# SPDX-FileCopyrightText: © 2024 Romain Brault <mail@romainbrault.com>
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
@@ -17,7 +17,6 @@ keywords = [
     "Python",
 ]
 license = "MIT OR Apache-2.0"
-
 license-files.paths = [
     "LICENSES/Apache-2.0.txt",
     "LICENSES/CC0-1.0.txt",
@@ -52,7 +51,12 @@ dynamic = [
 ]
 dependencies = [
     "distro>=1.9",
+    "python-dotenv>=1.0.1",
+    "rich-click>=1.8.4",
+    "typing-extensions>=4.12.2; python_full_version<'3.12'",
 ]
+
+scripts.test-rtd-linux-py311-test = "test_rtd_linux_py311_test.cli.entrypoint:test_rtd_linux_py311_test"
 
 [tool.pyproject-fmt]
 column_width = 79
